@@ -131,7 +131,3 @@ void start_game_creation() {
             cout << "Invalid choice. Please try again." << endl;
     }
 }
-
-
-
-void start_game() {
