@@ -58,7 +58,6 @@ namespace Gamestate {
     int motivation;
     string archetype_type;
     string motivation_word;
-
 }
 
 //This is the level up system
@@ -166,10 +165,57 @@ void start_game_creation() {
 
 void chapterOne() {
     //Begin the story with Abner and Maya after an emotionally brutal battle. Maya holds herself while Abner (Player Character) is desheveled.
+    cout << "I am following the path of a woman ahead. We have been with eachother for a while, I know this to be true." << endl;
+    cout << "I know her name, but cannot form it inside my mind. I moving in this world, yet not concious." << endl;
+    cout << "The stones of the mountain path are rough under my feet, the soles hurting from what feels like a march." << endl;
+    cout << "Yet only now, is there a voice inside my head narrating." << endl;
+    cout << "The inside of my hurts, and the more I think the deeper my eyes burn." << endl;
+    cout << "\n" << endl;
+
+    if (Gamestate::Logos == 1) {
+        cout << "(Logos) Keep Thinking. Why are you following this person." << endl;
+    }
+    else if (Gamestate::Ethos == 1) {
+        cout << "(Ethos) Who are you following? Why are you following this person?" << endl;
+    }
+    else if(Gamestate::Pathos == 1) {
+        cout << "(Pathos) How do I feel I know this person? Why are you following?" << endl;
+    }
+
+    cout << "\n" << endl;
+    cout << "I do not know why I am following her, but I must find out." << endl;
+    cout << "I recollect on what has happened between this moment and what I was doing before." << endl;
+    cout << "Yet, all that I am met with is a patchwork of memories. Large gapping holes inside my memory, as if there was a smog." << endl;
+    cout << "I reflect harder, the inside of my skull pulsating from the thoughts, along with the bruised feet that I can now articulate..." << endl;
+    cout << "Yet nothing of what led to our march or even what this march means appears in my mind." << endl;
+    cout << "\n" << endl;
+
+    if (Gamestate::Logos == 1) {
+        cout << "(Logos) You have known her for over ten years." << endl;
+    }
+    else if (Gamestate::Ethos == 1) {
+        cout << "(Ethos) You are her battle partner." << endl;
+    }
+    else if(Gamestate::Pathos == 1) {
+        cout << "(Pathos) You are her best friend." << endl;
+    }
+
+    cout << "\n" << endl;
+    cout << "'Hey, you are looking bruised, you need a second?'. I hear this chirped from the woman marching in front of me." << endl;
+    cout << "Almost instictually I sit down on the nearest trunk. My eyes weight too much to lift, and my feet are raw." << endl;
+    cout << "She peers over at you, 'Wow. I am usually the one that collaspes like this. First time for everything.'" << endl;
+    cout << "Her gear slides off her shoulders and onto the ground beneath her. She overlooks the horizons for something, before laying down." << endl;
+    cout << "\n" << endl;    
+    cout << "(Ethos) Thank you for providing guard." << endl;
+    cout << "\n" << endl;
+    cout << "The thoughts inside my head are starting to awaken, the councious and subcouncious. Why do I think to thank her for guarding?" << endl;
+    
+    cout << "(Logos) Now it makes sense why we are following her. But "
 
     Gamestate::chapter_counter++;
     chapterTwo();
 }
+
 
 void chapterTwo() {
     //This is the part what explains why Abner has amnesia. The pale has struck him and his mind. Find out by using the skills chosen
@@ -185,5 +231,4 @@ void chapterThree() {
     //Abner was able to resist by remembering who he was, and invoked his archetype_type and motivation_word
     //The conclusion should be about what to do with the book, expecially with the skills gained.
 
-    if ()
 }
