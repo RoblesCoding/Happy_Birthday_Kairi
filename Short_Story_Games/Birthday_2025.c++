@@ -41,6 +41,7 @@ void main_menu() {
         case 3:
             // Credits
             cout << "Game created by Elias Robles" << endl;
+            cout << "Origional story created by Kairi Hamm" << endl;
             break;
         default:
             cout << "Invalid choice. Please try again." << endl;
@@ -128,6 +129,7 @@ void start_game_creation() {
     cout << "3. Survival" << endl;
     //Clear choice for next input
     cin.clear();
+    
     cin >> choice;
     switch (choice) {
         case 1:
@@ -169,7 +171,7 @@ void chapterOne() {
     cout << "I know her name, but cannot form it inside my mind. I moving in this world, yet not concious." << endl;
     cout << "The stones of the mountain path are rough under my feet, the soles hurting from what feels like a march." << endl;
     cout << "Yet only now, is there a voice inside my head narrating." << endl;
-    cout << "The inside of my hurts, and the more I think the deeper my eyes burn." << endl;
+    cout << "The inside of head my hurts, and the more I think the deeper my eyes burn." << endl;
     cout << "\n" << endl;
 
     if (Gamestate::Logos == 1) {
@@ -179,7 +181,7 @@ void chapterOne() {
         cout << "(Ethos) Who are you following? Why are you following this person?" << endl;
     }
     else if(Gamestate::Pathos == 1) {
-        cout << "(Pathos) How do I feel I know this person? Why are you following?" << endl;
+        cout << "(Pathos) How do you know this person? Why are you following?" << endl;
     }
 
     cout << "\n" << endl;
@@ -208,10 +210,50 @@ void chapterOne() {
     cout << "\n" << endl;    
     cout << "(Ethos) Thank you for providing guard." << endl;
     cout << "\n" << endl;
-    cout << "The thoughts inside my head are starting to awaken, the councious and subcouncious. Why do I think to thank her for guarding?" << endl;
+    cout << "The thoughts inside my head are starting to awaken. I am beginning to gain my cognition." << endl;
     
-    cout << "(Logos) Now it makes sense why we are following her. But "
+    cout << "(Logos) The thoughts inside of your head, no matter how dull are starting to make its way into action." << endl;
+    cout << "(Logos) You feel that you can start to speak. What is on your mind?" << endl;
 
+    bool gamechoice = false;
+
+    while (!gamechoice) {
+        cout << "1. What am I doing here?" << endl;
+        cout << "2. What is your name?" << endl;
+        cout << "3. What is my name?" << endl;
+        cout << "4. What are we doing exaclty exactly?" << endl;
+        cout << "5. [Continue]" << endl;
+
+        int choice;
+        cin >> choice;
+        switch (choice) {
+            case 1:
+                cout << "Well, we are " << endl;
+                gamechoice = true;
+                continue;
+            case 2:
+                cout << "My name is Mara, do you not remember?" << endl;
+                cout << "(Pathos) She gives you a concerned glance, as if the damage that she anticipated happened to you was undershooting." << endl;
+                gamechoice = true;
+                continue;
+            case 3:
+                cout << "Your name is Abner." << endl;
+                cout << "(Pathos) you can tell that she is concerned now. The voice that exited out of her diaphram was that of well hid fear." << endl;
+                gamechoice = true;
+                continue;
+            case 4:
+                cout << "We are trying to defeat the magician mafia. We were sent her by the [magicain order that is in the story]" << endl;
+                gamechoice = true;
+                continue;
+            case 5:
+                gamechoice = true;
+                break;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+
+        }
+
+    }
     Gamestate::chapter_counter++;
     chapterTwo();
 }
